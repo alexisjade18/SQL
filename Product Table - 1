@@ -1,0 +1,25 @@
+--Create a product table database
+
+CREATE TABLE products(id INTEGER PRIMARY KEY, product TEXT, size TEXT, price INTEGER, return_allowed TEXT);
+
+INSERT INTO products VALUES(1, "shirt", "M", 13, "NO");
+INSERT INTO products VALUES (2, "pants", "L", 20, "YES");
+INSERT INTO products VALUES(3, "socks", "S", 5, "YES");
+INSERT INTO products VALUES(4, "beanie", "one-size", 20, "No");
+INSERT INTO products VALUES(5, "ballcap", "one-size", 20, "No");
+INSERT INTO products VALUES(6, "buckethat", "one-size", 20, "No");
+INSERT INTO products VALUES (7, "shorts", "large", 40, "Yes");
+INSERT INTO products VALUES (8, "longsleeve", "large", 50, "Yes");
+INSERT INTO products VALUES (9, "jacket", "M", 70, "Yes");
+INSERT INTO products VALUES (10, "windbreaker", "L", 80, "Yes");
+INSERT INTO products VALUES (11, "tanktop", "S", 30, "No");
+INSERT INTO products VALUES (12, "shoes", "eight", 40, "No");
+INSERT INTO products VALUES (13, "flipflops", "nine", 30, "No");
+INSERT INTO products VALUES (14, "sunglasses", "standard", 35, "Yes");
+INSERT INTO products VALUES (15, "earrings", "standard", 20, "Yes");
+SELECT * FROM products;
+
+--display the database ordered by price.
+SELECT * FROM products
+ORDER BY price desc;
+
